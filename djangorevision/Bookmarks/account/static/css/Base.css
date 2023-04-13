@@ -1,0 +1,293 @@
+@import url(//fonts.googleapis.com/css?family=Muli);
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:PT Sans;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "helvetica",sans-serif;
+}
+
+p {
+    line-height: 1.8;
+
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00a74f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: PT Sans;
+    font-weight: normal;
+}
+
+h1 {
+    /* border-bottom: 1px solid #bbb; */
+    padding: 0 0 10px 0;
+    margin: 10px 0 20px 0;
+    color: darkcyan;
+    font-size: x-large;
+    text-align: center;
+}
+
+h2 {
+    margin: 30px 0 20px ;
+}
+
+h4 {
+    text-align: center;
+}
+
+ol {
+    line-height: 1.5;
+
+}
+#content {
+    margin-top: 40px;
+
+}
+#header {
+    padding:10px 100px ;
+    font-size: 14px;
+    background: #12c064;
+    color: #fff;
+    border-bottom: 5px solid red;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 10;
+}
+
+#header .logo {
+    font-family: 'Muli',sans-serif;
+    float: left;
+    color: #f3f7cc;
+    font-size: 20px;
+    margin-right: 10%;
+}
+
+#header ul.menu {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#header ul.menu {
+    float: left;
+    padding:4px 10px;
+}
+
+#header ul.menu li.selected a, #header ul.menu.selected a:hover {
+    color: #1b6b32;
+    font-weight: bold;
+}
+
+#header a {
+    color: #f3f7cc;
+}
+
+#header a:hover {
+    color: #fff;
+}
+
+#header.user {
+    float: right;
+    padding-top: 4px;
+}
+
+
+#comment {
+    padding: 30px 100px;   
+}
+
+.image-preview, .image-detail {
+    max-width: 300px;
+    display: block;
+    float: left;
+    margin: 20px 30px 0;
+}
+
+.image-detail {
+    margin-top: 20px;
+}
+
+.image-info div {
+    padding: 20px 0;
+    overflow: auto;
+}
+
+.count {
+    color: #aaa;
+    border: 3px solid #bbb;
+    border-radius: 26px;
+    padding: 10px 20px;
+    margin: 10px 20px 0;
+}
+
+a.like, a.follow {
+    float: right;
+    margin-top: 8px;
+}
+
+#image-list {
+    overflow: hidden;
+}
+
+#image-list .image{
+    float: left;
+    width: 200px;
+    height: 300px;
+    margin: 0 10px 10px 10px;
+    border-top: 8px solid red;
+    background: #eee;
+}
+
+#image-list img {
+    width: 220px;
+    height: 220px;
+}
+
+#image-list .info {
+    padding: 10px;
+}
+
+#image-list .info a {
+    color: #333;
+
+}
+
+.image-likes div {
+    float: left;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-likes img {
+    width: 120px;
+    height: 120px;
+    border-radius:50% ;
+
+}
+
+/* user */
+
+#people-list img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+#people-list .user {
+    width: 180px;
+    float: left;
+    overflow: auto;
+    padding: 10px;
+}
+
+#people-list .info {
+    text-align: center;
+
+}
+
+img.user-detail {
+    border-radius: 50%;
+    float: left;
+}
+
+.profile-info {
+    float: left;
+    overflow: auto;
+    margin-right: 20px;
+}
+
+.image-container {
+    margin-top: 40px;
+}
+
+
+/* actions */
+
+.action {
+    clear: both;
+    overflow: auto;
+}
+
+.action .images {
+    float: left;
+    margin: 0 10px 10px 0;
+
+}
+
+.action .date {
+    font-style: italic;
+    color: #ccc;
+}
+
+/* forms */
+
+form {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    /* padding: 30px; */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-self: center;
+    margin-top: 40px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    width: 700px;
+    line-height: 30px;
+}
+
+
+input {
+    width: 200px;
+    margin-left: 80px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+label {
+    font-size: medium;
+}
+
+
+input[type=submit] {
+    width: 350px;
+    height: 30px;
+    margin-left: 100px;
+    text-align: center;
+    background: #12c064;
+
+}
+
